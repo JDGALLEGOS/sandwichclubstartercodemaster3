@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.galpotechsolutions.sandwich_club_starter_code_master3.DetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_iv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/sandwich_picture_content_description"
+                android:paddingBottom="@dimen/style_padding"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/detail"
+                android:text="@string/detail_also_known_as_label"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/also_known_tv"
+                style="@style/detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/detail"
+                android:text="@string/detail_ingredients_label"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ingredients_tv"
+                style="@style/detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/detail"
+                android:text="@string/detail_place_of_origin_label"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/origin_tv"
+                style="@style/detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/detail"
+                android:text="@string/detail_description_label"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/description_tv"
+                style="@style/detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</FrameLayout>
